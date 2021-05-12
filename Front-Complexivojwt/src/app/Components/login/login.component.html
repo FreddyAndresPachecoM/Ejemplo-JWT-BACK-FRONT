@@ -1,0 +1,17 @@
+<html style="text-align: center;">
+    <header>
+        <h1>Login</h1>
+    </header>
+    <body>
+        <div class="container-sm">
+            <form [formGroup] = "formLogin" (ngSubmit) = "iniciarSesion()">
+                <input type="text" placeholder="Username" formControlName = "username">
+                <br>
+                <input type="password" placeholder="Password" formControlName = "contrasena">
+                <br>
+                <button class="btn btn-outline-primary" type="submit">Ingresar</button>
+            </form>
+        </div>        
+    </body>
+</html>
+
